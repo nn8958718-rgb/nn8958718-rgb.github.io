@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff7f5">
+  <title>A little surprise for Mimo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <main id="experience">
+    <!-- 0. Black screen with a glowing heart -->
+    <section class="screen intro-screen active" id="intro-screen" aria-label="Opening heart">
+      <p class="intro-kicker">a little surprise is waiting</p>
+      <button class="glow-heart" id="open-heart" aria-label="Tap the glowing heart to open the surprise">♥</button>
+      <p class="intro-tap">tap the heart ♡</p>
+    </section>
+
+    <!-- 1. Cake opening -->
+    <section class="screen active" id="cake-screen" aria-label="Birthday cake">
+      <p class="eyebrow">A little birthday surprise</p>
+      <h1>For you, Mimo</h1>
+      <p class="intro-copy">A little wish, wrapped with love.</p>
+      <div class="cake-scene">
+        <span class="rose rose-a" aria-hidden="true">✿</span>
+        <span class="rose rose-b" aria-hidden="true">✿</span>
+        <div class="cake-plate"></div>
+        <div class="cake-body"><div class="icing"></div><div class="cake-ribbon"></div></div>
+        <button class="candle candle-one" aria-label="Tap the first candle"><span class="flame"></span><span class="wick"></span></button>
+        <button class="candle candle-two" aria-label="Tap the second candle"><span class="flame"></span><span class="wick"></span></button>
+      </div>
+      <p class="tap-hint">Tap a candle to begin <span>♡</span></p>
+    </section>
+
+    <!-- 2. Birthday reveal -->
+    <section class="screen celebration-screen" id="celebration-screen" aria-label="Birthday greeting">
+      <div class="party-decor" aria-hidden="true">
+        <span class="balloon balloon-left"><i></i></span><span class="balloon balloon-right"><i></i></span>
+        <span class="balloon balloon-small"><i></i></span>
+        <span class="rose-art rose-top-left">❀</span><span class="rose-art rose-top-right">❀</span>
+        <span class="rose-art rose-bottom-left">✿</span><span class="rose-art rose-bottom-right">✿</span>
+        <span class="petal petal-one"></span><span class="petal petal-two"></span><span class="petal petal-three"></span>
+      </div>
+      <p class="eyebrow">Today is all about you</p>
+      <h1 class="birthday-title">Happy Birthday<br><em>Mimo!</em></h1>
+      <div class="thin-heart">♡</div>
+      <p class="reveal-message">I made you something, my Mimo.</p>
+      <button class="text-button" id="to-letter">A little surprise for you <span>♡</span></button>
+    </section>
+
+    <!-- 3. Letter image -->
+    <section class="screen letter-screen" id="letter-screen" aria-label="Personal letter">
+      <p class="eyebrow">Made with love</p>
+      <h2>I hope you like it.</h2>
+      <div class="letter-frame">
+        <span class="frame-rose frame-rose-one" aria-hidden="true">✿</span>
+        <span class="frame-rose frame-rose-two" aria-hidden="true">❀</span>
+        <img id="letter-image" src="letter.png" alt="Your personal birthday letter" onerror="this.hidden=true; document.getElementById('letter-placeholder').hidden=false;">
+        <div id="letter-placeholder" class="letter-placeholder" hidden>
+          <span class="placeholder-heart">♡</span>
+          <strong>Your letter goes here</strong>
+          <p>Add your letter picture to this folder and name it <b>letter.png</b>.</p>
+        </div>
+      </div>
+      <button class="soft-button" id="to-ending">One last thing…</button>
+    </section>
+
+    <!-- 4. Number 19 and final message -->
+    <section class="screen ending-screen" id="ending-screen" aria-label="Make a wish">
+      <div class="ending-layout">
+        <button class="number-candle" id="final-candle" aria-label="Tap the 19 candles to finish">
+          <span class="number-flame flame-19-one"></span><span class="number-flame flame-19-two"></span>
+          <span class="number">19</span>
+          <span class="number-wax">♡</span>
+        </button>
+        <div class="ending-copy">
+          <p class="eyebrow">A new chapter begins</p>
+          <h2>Happy Birthday<br><em>Mimo</em></h2>
+          <p class="wish-line">make a wish y ru7y</p>
+        </div>
+      </div>
+      <p class="signature">zawztk t7ebek mimo</p>
+      <p class="tap-hint ending-hint">Tap the candles ♡</p>
+    </section>
+
+    <!-- 5. Final full-screen ending -->
+    <section class="screen final-screen" id="final-screen" aria-label="Final birthday wish">
+      <div class="final-roses" aria-hidden="true">✿ <span>❀</span> ✿</div>
+      <p class="final-words">ntmana kol chy<br>tmanitou alih ysir<br><span>mwah ♡</span></p>
+      <div class="final-ornament">— &nbsp; ♡ &nbsp; —</div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
